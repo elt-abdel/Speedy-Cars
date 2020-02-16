@@ -20,11 +20,11 @@ function showComments(comments) {
     var heading = document.createElement("h3");
     heading.innerHTML = comments[i].name;
     var comment = document.createElement("p");
-    comment.innerHTML = comments[i].comment;
+    comment.innerHTML = comments[i].comments;
     section.appendChild(heading);
     section.appendChild(comment);
     commentsSection.appendChild(section);
   }
 }
-// 2:22:13
+
 

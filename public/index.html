@@ -14,10 +14,10 @@
         <h2>Share Your Favorite</h2>
         <h3>Share Your Favorite Car Picture Link</h3>
         <!-- add form to ask viewers for input-->
-        <form>
-          <input type="text" name="first-name" placeholder="First Name" />
-          <textarea name="link" rows="2">Share your link here!</textarea>
-          <input type="submit" value="submit" id="submit"/>
+        <form action="/comments" method="POST">
+          <input type="text" name="name" placeholder="First Name" />
+          <textarea name="comment" rows="2">Share your link here!</textarea>
+          <input type="submit" value="submit"/>
         </form>
       </aside>
       <article>
