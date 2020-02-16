@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/elt-abdel/first-web-app#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "sqlite3": "^4.1.1"
   }
 }
