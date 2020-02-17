@@ -5,6 +5,9 @@ var sqlite3 = require('sqlite3');
 var db = new sqlite3.Database('database/comments.db');
 var bodyParser = require("body-parser");
 
+// code that will help server run locally or from cloud
+const port = process.env.PORT || 3000
+
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -41,6 +44,6 @@ app.post("/comments", function (request, response) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("server is running on port 3000");
 });
